@@ -61,13 +61,13 @@ set termguicolors
 set sw=2
 set laststatus=2
 set relativenumber
+set updatetime=300
 
 so ~/.vim/plugins.vim
 so ~/.vim/plugins-config.vim
 so ~/.vim/maps.vim
 
 colorscheme onedark 
-set background=dark
 highlight Normal ctermbg=NONE
 
 au bufNewFile,BufRead *.html set filetype=htmldjango

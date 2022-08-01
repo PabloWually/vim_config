@@ -12,7 +12,6 @@ nnoremap <Leader>q :q<CR>
 nnoremap <Leader>Q :q!<CR>
 " shorter commands
 cnoreabbrev tree NERDTreeToggle
-cnoreabbrev find NERDTreeFind
 
 " plugs
 map <Leader>nt :NERDTreeFind<CR>

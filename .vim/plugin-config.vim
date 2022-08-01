@@ -1,8 +1,11 @@
+" Colorizer
+let g:colorizer_maxlines=1000
+
 " Lightlane
 let g:lightline = {
       \ 'active': {
-      \   'left': [['mode', 'paste'], [], ['relativepath', 'modified']],
-      \   'right': [['kitestatus'], ['filetype', 'percent', 'lineinfo'], ['gitbranch']]
+      \   'left': [['mode', 'paste'], ['gitbranch', 'readonly'], ['filename', 'modified']],
+      \   'right': [['kitestatus'], ['filetype', 'percent', 'lineinfo']
       \ },
       \ 'inactive': {
       \   'left': [['inactive'], ['relativepath']],
@@ -13,13 +16,13 @@ let g:lightline = {
       \   'inactive': 'inactive'
       \ },
       \ 'component_function': {
-      \   'gitbranch': 'fugitive#head',
+      \   'gitbranch': 'gitbranch#name',
       \   'kitestatus': 'kite#statusline'
       \ },
-      \ 'colorscheme': 'onedark',
+      \ 'colorscheme': 'darcula',
       \ 'subseparator': {
-      \   'left': '',
-      \   'right': ''
+      \   'left': '¦',
+      \   'right': '¦'
       \ }
       \}
 
